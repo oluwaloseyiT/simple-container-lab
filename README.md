@@ -5,13 +5,17 @@ In this lab I packaged, built, and tested a simple docker container that runs th
 ---
 
 ## Task 1: Prepare your Environment 
-- Creat a Local Repo 
+- Create and open a Local Repo
 
+```
+mkdir folder && cd folder
+```
 ---
 
 ## Task 2: Setup your App
 
-- Write the docker file
+- Write the dockerfile
+
 
 ---
 
