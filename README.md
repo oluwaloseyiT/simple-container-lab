@@ -1,6 +1,13 @@
-# Simple Docker Container-lab 
+# Simple Docker Container lab 
 
-In this lab I packaged, built, and tested a simple docker container that runs the welcome message "Hello, DevOps!".
+This hands-on lab focuses on containerization workflow. I created a Node.js script that prints "Hello, DevOps!", containerizing it with a dockerfile, built the image, and ran the app as a container.
+
+---
+
+## Prerequisite
+- A terminal
+- Docker installed and running
+- Git & Github
 
 ---
 
@@ -31,4 +38,4 @@ mkdir folder && cd folder
 ---
 
 ## License
-MIT
+This project is licensed under the MIT License
