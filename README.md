@@ -12,7 +12,9 @@ This hands-on lab focuses on containerization workflow. I created a Node.js scri
 ---
 
 ## Task 1: Prepare your Environment 
+
 - Create and open a Local Repo
+Create a local project folder to hold your app and Dockerfile.
 
 ```
 mkdir folder && cd folder
@@ -22,14 +24,26 @@ mkdir folder && cd folder
 ## Task 2: Setup your App
 
 - Write the dockerfile
+Define the base image(FROM), copy the app in(COPY), and set the run command(CMD).
 
-
+```
+FROM node:18-alpine
+COPY app.js .
+CMD ["node", "app.js"]
+```
 ---
 
-## Task 3: Containerize the App
+## Task 3: Build the App Image
 
-- Build the Docker image
-
+- Build & test the Docker image
+Run docker build and then docker run to confirm the container works as expected.
+```
+docker build -t simple-container-lab .
+```
+```
+docker run --rm simple-container-lab
+```
+**Note:** Expected output is `Hello, DevOps!`
 ---
 
 ## Task 4: Push to GitHub
