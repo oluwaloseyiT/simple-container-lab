@@ -52,7 +52,7 @@ docker build -t simple-container-lab .
 ```
 docker run --rm simple-container-lab
 ```
-**Note:** Expected output is `Hello, DevOps!`
+  > **Note:** Expected output is `Hello, DevOps!`
 ---
 
 ## Task 4: Push to GitHub ⬆️
@@ -70,7 +70,7 @@ git remote add origin https://github.com/<your-username>/simple-container-lab.gi
 git push -u origin main
 ```
 
-**Note:** Replace `<your-username>` with your actual GitHub username.
+  > **Note:** Replace `<your-username>` with your actual GitHub username.
 ---
 
 ## License
