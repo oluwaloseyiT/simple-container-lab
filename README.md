@@ -32,7 +32,7 @@ console.log("Hello, DevOps!");
 ```
 - Write the dockerfile
 
-Define the base image(FROM), copy the app in(COPY), and set the run command(CMD).
+Define the base image(FROM), copy the app in(COPY), and set the run command(CMD):
 
 ```
 FROM node:18-alpine
@@ -45,7 +45,7 @@ CMD ["node", "app.js"]
 
 - Build & test the Docker image
 
-Run docker build and then docker run to confirm the container works as expected.
+Run docker build and then docker run to confirm the container works as expected:
 ```
 docker build -t simple-container-lab .
 ```
@@ -56,8 +56,21 @@ docker run --rm simple-container-lab
 ---
 
 ## Task 4: Push to GitHub ⬆️
-- Initialize and then Upload the work to GitHub
+- Initialize the repo:
+```
+git init
+git add .
+git commit -m "Initial commit: simple container lab"
+```
+- Upload the work to GitHub
+Create a new repository on GitHub (via the web UI or `gh repo create`), then link it and push:
+```
+git branch -M main
+git remote add origin https://github.com/<your-username>/simple-container-lab.git
+git push -u origin main
+```
 
+**Note:** Replace `<your-username>` with your actual GitHub username.
 ---
 
 ## License
