@@ -1,17 +1,17 @@
-# Simple Docker Container lab 
+# 🐳 Simple Docker Container lab 
 
 This hands-on lab focuses on containerization workflow. I created a Node.js script that prints "Hello, DevOps!", containerizing it with a dockerfile, built the image, and ran the app as a container.
 
 ---
 
-## Prerequisite
+## ⚙️ Prerequisite
 - A terminal
 - Docker installed and running
 - Git & Github
 
 ---
 
-## Task 1: Prepare your Environment
+## Task 1: Prepare your Environment 🛠️
 
 - Create and open a Local Repo
 
@@ -22,7 +22,7 @@ mkdir folder && cd folder
 ```
 ---
 
-## Task 2: Setup your App
+## Task 2: Setup your App 🚀
 - Write the app script
 
 Write a simple script (app.js) that the container will run.
@@ -41,7 +41,7 @@ CMD ["node", "app.js"]
 ```
 ---
 
-## Task 3: Build the App Image
+## Task 3: Build the App Image 🏗️
 
 - Build & test the Docker image
 
@@ -55,7 +55,7 @@ docker run --rm simple-container-lab
 **Note:** Expected output is `Hello, DevOps!`
 ---
 
-## Task 4: Push to GitHub
+## Task 4: Push to GitHub ⬆️
 - Initialize and then Upload the work to GitHub
 
 ---
